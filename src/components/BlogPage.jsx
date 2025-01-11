@@ -15,7 +15,7 @@ const BlogPage = () => {
   useEffect(() => {
     async function fetchBlogs() {
       try {
-        const response = await fetch("https://slender-backend.vercel.app/blogs");
+        const response = await fetch("https://slender-backend.vercel.app/api/blogs");
         const data = await response.json();
         setPosts(data);
       } catch (error) {
